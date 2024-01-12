@@ -3134,6 +3134,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "masp_note_encryption"
+version = "1.0.0"
+source = "git+https://github.com/anoma/masp?rev=c3c6047a9c9da54058afc71219b913ac9f79e48b#c3c6047a9c9da54058afc71219b913ac9f79e48b"
+dependencies = [
+ "borsh",
+ "chacha20",
+ "chacha20poly1305",
+ "cipher",
+ "rand_core 0.6.4",
+ "subtle 2.4.1",
+]
+
+[[package]]
 name = "masp_primitives"
 version = "1.0.0"
 source = "git+https://github.com/anoma/masp?tag=v1.0.0#c3c6047a9c9da54058afc71219b913ac9f79e48b"
@@ -3153,7 +3166,38 @@ dependencies = [
  "incrementalmerkletree",
  "jubjub",
  "lazy_static",
- "masp_note_encryption",
+ "masp_note_encryption 1.0.0 (git+https://github.com/anoma/masp?tag=v1.0.0)",
+ "memuse",
+ "nonempty",
+ "num-traits",
+ "rand 0.8.5",
+ "rand_core 0.6.4",
+ "sha2 0.10.8",
+ "subtle 2.4.1",
+ "zcash_encoding",
+]
+
+[[package]]
+name = "masp_primitives"
+version = "1.0.0"
+source = "git+https://github.com/anoma/masp?rev=c3c6047a9c9da54058afc71219b913ac9f79e48b#c3c6047a9c9da54058afc71219b913ac9f79e48b"
+dependencies = [
+ "aes",
+ "bip0039",
+ "bitvec",
+ "blake2b_simd",
+ "blake2s_simd",
+ "bls12_381",
+ "borsh",
+ "byteorder",
+ "ff",
+ "fpe",
+ "group",
+ "hex",
+ "incrementalmerkletree",
+ "jubjub",
+ "lazy_static",
+ "masp_note_encryption 1.0.0 (git+https://github.com/anoma/masp?rev=c3c6047a9c9da54058afc71219b913ac9f79e48b)",
  "memuse",
  "nonempty",
  "num-traits",
@@ -3178,7 +3222,7 @@ dependencies = [
  "itertools 0.11.0",
  "jubjub",
  "lazy_static",
- "masp_primitives",
+ "masp_primitives 1.0.0 (git+https://github.com/anoma/masp?tag=v1.0.0)",
  "minreq",
  "rand_core 0.6.4",
  "redjubjub",
@@ -3321,7 +3365,7 @@ dependencies = [
  "futures",
  "itertools 0.10.5",
  "loupe",
- "masp_primitives",
+ "masp_primitives 1.0.0 (git+https://github.com/anoma/masp?tag=v1.0.0)",
  "masp_proofs",
  "namada_core",
  "namada_ethereum_bridge",
@@ -3388,7 +3432,7 @@ dependencies = [
  "index-set",
  "itertools 0.10.5",
  "k256",
- "masp_primitives",
+ "masp_primitives 1.0.0 (git+https://github.com/anoma/masp?tag=v1.0.0)",
  "namada_macros",
  "num-integer",
  "num-rational 0.4.1",
@@ -3477,7 +3521,7 @@ dependencies = [
  "futures",
  "itertools 0.10.5",
  "lazy_static",
- "masp_primitives",
+ "masp_primitives 1.0.0 (git+https://github.com/anoma/masp?tag=v1.0.0)",
  "masp_proofs",
  "namada_core",
  "namada_ethereum_bridge",
@@ -3555,7 +3599,7 @@ version = "0.28.1"
 dependencies = [
  "borsh",
  "borsh-ext",
- "masp_primitives",
+ "masp_primitives 1.0.0 (git+https://github.com/anoma/masp?tag=v1.0.0)",
  "namada_core",
  "namada_macros",
  "namada_proof_of_stake",
@@ -3569,7 +3613,7 @@ name = "namada_vm_env"
 version = "0.28.1"
 dependencies = [
  "borsh",
- "masp_primitives",
+ "masp_primitives 1.0.0 (git+https://github.com/anoma/masp?tag=v1.0.0)",
  "namada_core",
 ]
 
@@ -3593,7 +3637,7 @@ version = "0.28.1"
 dependencies = [
  "borsh",
  "getrandom 0.2.11",
- "masp_primitives",
+ "masp_primitives 1.0.0 (git+https://github.com/anoma/masp?rev=c3c6047a9c9da54058afc71219b913ac9f79e48b)",
  "namada",
  "namada_test_utils",
  "namada_tests",
